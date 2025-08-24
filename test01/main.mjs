@@ -1,5 +1,6 @@
-import * as Plot from "@observablehq/plot";
-import * as d3 from "d3";
+// Use CDN imports for GitHub Pages compatibility
+import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.17/+esm";
+import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm";
 
 async function generateChart() {
   // Load the CSV data using fetch
@@ -23,7 +24,7 @@ async function generateChart() {
         x: "culmen_length_mm",
         y: "culmen_depth_mm",
         stroke: "species",
-        r: 8,
+        r: 4,
       }),
     ],
   });
