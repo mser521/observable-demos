@@ -6,7 +6,7 @@ export default defineConfig({
     historyApiFallback: true,
   },
   build: {
-    outDir: "build", // Specify build output directory
+    outDir: "dist", // Specify build output directory
     rollupOptions: {
       input: {
         main: "./index.html",
