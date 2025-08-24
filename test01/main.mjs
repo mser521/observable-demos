@@ -3,7 +3,7 @@ import * as d3 from "d3";
 
 async function generateChart() {
   // Load the CSV data using fetch
-  const response = await fetch("./penguins.csv");
+  const response = await fetch("../data/penguins.csv");
   const csvText = await response.text();
   const penguins = d3.csvParse(csvText, d3.autoType);
 
