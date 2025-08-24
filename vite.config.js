@@ -10,8 +10,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: "./index.html",
-        test01: "./test01/index.html",
-        test02: "./test02/index.html",
+        test01: "./demos/test01/index.html",
+        test02: "./demos/test02/index.html",
       },
       output: {
         manualChunks: undefined,

@@ -2,8 +2,8 @@ import * as Plot from "@observablehq/plot";
 import * as d3 from "d3";
 
 async function generateChart() {
-  // Load the CSV data using fetch
-  const response = await fetch("../data/alphabet.csv");
+  // Get the root directory by going up from current file location
+  const response = await fetch("../../data/alphabet.csv");
   const csvText = await response.text();
   const alphabet = d3.csvParse(csvText, d3.autoType);
 
