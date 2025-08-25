@@ -15,6 +15,10 @@ async function generateChart() {
 
   const table = new Tabulator("#chart", {
     data: penguins,
+    height: "311px",
+    layout: "fitColumns",
+    movableRows: true,
+    groupBy: "species",
     columns: [
       { title: "Species", field: "species" },
       { title: "Island", field: "island" },
