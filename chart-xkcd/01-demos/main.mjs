@@ -77,7 +77,7 @@ new chartXkcd.StackedBar(svgStackedBar, {
 });
 
 const svgPie = document.querySelector(".pie-chart");
-const pieChart = new chartXkcd.Pie(svgPie, {
+new chartXkcd.Pie(svgPie, {
   title: "What Tim is made of",
   data: {
     labels: ["a", "b", "e", "f", "g"],
